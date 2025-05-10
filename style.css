@@ -1,0 +1,81 @@
+/* 5. Botón clic aqui | no borrar*/ 
+.boton-vinculo {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #b80000;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #000000;
+    transition: all 0.3s ease;
+}
+.boton-vinculo:hover {
+    background-color: #b80000;
+    color: #000000;
+}
+
+/* 11. Body con fondo y margen | no borrar*/
+body {
+    background-image: url('IMG/fondo-textura.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    
+}
+
+/*no borrar | z-hover , z-hover-img y cuadrado-hover y z-hover:hover .cuadrado-hover*/
+.zona-hover {
+    position: relative;
+    display: inline-block;
+}
+.zona-hover img {
+    display: block;
+    width: 190px;
+    height: auto;
+}
+.cuadrado-hover {
+        width: 150px;
+        height: 150px;
+        background-color: #b80000;
+        border: 20px double #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.5s ease;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+}
+.zona-hover:hover .cuadrado-hover {
+    transform: translate(-50%, -50%) translateX(200px);
+}
+
+
+/* 14. Texto con imagen de fondo, padding y borde | no borrar*/
+.texto-con-fondo {
+    font-family: fantasy;
+    color: #00000081;
+    font-size: 40px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20%;
+    border: double 4px #ff0000;
+    background-image: url('IMG/textura-fondo.jpg');
+    background-size: cover;
+}
+
+/* Centramos todo el contenido | no borrar*/
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
